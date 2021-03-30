@@ -1,0 +1,154 @@
+body{
+  margin: 0px;
+}
+
+.homePage{
+  background-image:linear-gradient(rgba(0, 0,0,0.1),rgba(25, 25,25, 0.5), rgba(50, 50,50, 0.7), rgba(255, 255,255, 1)), url("asets/Home.jpg");
+  background-position:  top;
+  width:100%;
+  height: 100vh;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  size: contain;
+  background-color: #130030;
+  margin: 0px;
+  position: inherit;
+
+}
+
+
+.homeButton{
+  padding-top: 500px;
+  text-align:center;
+}
+#homeButton{
+  position: sticky;
+  width: 100px;
+  height: 50px;
+  outline: none;
+  cursor: pointer;
+
+}
+@media only screen and (max-width:1480px) {
+  .homePage{
+    height: auto;
+    width: auto;
+    background-size: cover;
+
+
+}
+#homeButton{
+  display: none;
+}
+
+}
+
+.centerContainer{
+  background-image: linear-gradient(rgba());
+  width: auto;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.imgWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.spinHS{
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.spinCirc{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color:black;
+}
+
+a:active {
+  background-color: black;
+}
+
+.rightContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.textContainer{
+  background-color: red;
+  color: white;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+.text1{
+
+}
+.img1{
+  display: none;
+  background-size: contain;
+  float: right;
+  width:100px; height:100px;
+}
+.page1{
+  background-color: blue;
+  padding: 10px;
+  cursor: pointer;
+
+}
+.page1:hover{
+  background-color: green;
+  transition: 1s;
+  transform:scale(1.5);
+}
+.page1:hover .img1{
+  transition: 2s;
+  display: block;
+
+}
+
+
+
+
+.page2{
+  background-color: blue;
+  padding: 10px;
+}
+.page2:hover{
+  background-color: green;
+}
+
+
+
+@media only screen and (max-width:900px) {
+  .centerContainer{
+    height: 100vh;
+    display: grid;
+    grid-template-rows:  30% 70%;
+    grid-template-columns: none;
+  }
+  .rightContainer{
+  justify-content: none;
+
+  }
+}
